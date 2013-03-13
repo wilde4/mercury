@@ -126,7 +126,7 @@
     type = @element.find('input[name=link_type]:checked').val()
 
     switch type
-      when 'existing_bookmark' then attrs = {href: "##{@element.find('#link_existing_bookmark').val()}"}
+      when 'existing_bookmark' then attrs = {href: "#{@element.find('#link_existing_bookmark').val()}"}
       when 'new_bookmark' then attrs = {name: "#{@element.find('#link_new_bookmark').val()}"}
       else attrs = {href: @element.find("#link_#{type}").val()}
 
